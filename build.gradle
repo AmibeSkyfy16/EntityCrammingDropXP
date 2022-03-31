@@ -35,7 +35,7 @@ def optionalDependency(String dep) {
 
 tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
-	it.options.release.set(17)
+	it.options.release.set(16)
 }
 
 java {
@@ -76,13 +76,13 @@ publishing {
 
 build{
 	doLast {
-		copy {
-			from 'build/libs/entitycrammingdropxp-1.0.0.jar'
-			into 'C:\\Users\\colin\\Documents\\servers\\LatestFabric\\mods'
-		}
-		copy {
-			from 'build/libs/entitycrammingdropxp-1.0.0.jar'
-			into 'C:\\Users\\colin\\curseforge\\minecraft\\Instances\\IDK\\mods'
-		}
+//		copy {
+//			from 'build/libs/entitycrammingdropxp-1.0.0.jar'
+//			into 'C:\\Users\\colin\\Documents\\servers\\LatestFabric\\mods'
+//		}
+//		copy {
+//			from 'build/libs/entitycrammingdropxp-1.0.0.jar'
+//			into 'C:\\Users\\colin\\curseforge\\minecraft\\Instances\\IDK\\mods'
+//		}
 	}
 }
