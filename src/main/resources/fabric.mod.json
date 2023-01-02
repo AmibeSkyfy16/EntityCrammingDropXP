@@ -4,9 +4,7 @@
   "version": "${version}",
   "name": "entitycrammingdropxp",
   "description": "entitycrammingdropxp",
-  "authors": [
-    "Skyfy16"
-  ],
+  "authors": ["Skyfy16"],
   "contact": {},
 
   "license": "MIT",
@@ -23,7 +21,7 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.9",
+    "fabricloader": ">=0.14.12",
     "fabric": "*",
     "minecraft": "1.19.2",
     "java": ">=17"
