@@ -1,1 +1,1 @@
-# EntityCrammingDropXP
+![](./docs/readme_dark.svg)
