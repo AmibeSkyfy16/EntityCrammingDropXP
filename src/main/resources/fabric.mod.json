@@ -5,9 +5,7 @@
 
   "name": "entitycrammingdropxp",
   "description": "entitycrammingdropxp",
-  "authors": [
-    "Skyfy16"
-  ],
+  "authors": ["Skyfy16"],
   "contact": {},
 
   "license": "MIT",
@@ -24,12 +22,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.13.3",
+    "fabricloader": ">=0.14.12",
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
