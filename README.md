@@ -14,3 +14,8 @@ ___
     <a href="coindrop.to/AmibeSkyfy16"> <img style="vertical-align:middle" width="200" src="./docs/coindrop.svg"> </a>
     <a href="https://ko-fi.com/amibeskyfy16"> <img style="vertical-align:middle" width="200" src="./docs/KoFi.svg"> </a>
 </div>
+
+
+## License
+
+This mod is licensed under the MIT license. You can freely include the mod on any modpack with no permission. Usage of this mod's code on other projects is allowed as long as attribution is given.
