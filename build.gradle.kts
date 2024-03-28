@@ -15,9 +15,9 @@
 val transitiveInclude: Configuration by configurations.creating
 
 plugins {
-    id("fabric-loom") version "1.1-SNAPSHOT"
-    id("org.jetbrains.kotlin.jvm") version "1.8.20"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.8.20"
+    id("fabric-loom") version "1.5-SNAPSHOT"
+    id("org.jetbrains.kotlin.jvm") version "1.9.23"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.23"
     idea
 }
 
@@ -127,7 +127,7 @@ tasks {
     }
 
     named<Wrapper>("wrapper") {
-        gradleVersion = "8.1"
+        gradleVersion = "8.7"
         distributionType = Wrapper.DistributionType.BIN
     }
 
@@ -169,8 +169,9 @@ tasks {
     }
 
     val copyJarToTestServer = register("copyJarToTestServer") {
-        println("copy to server")
-        copyFile("build/libs/entitycrammingdropxp-${project.properties["mod_version"]}.jar", project.property("testServerModsFolder") as String)
+        println("copying jar to server")
+//        copyFile("build/libs/${project.properties["archives_name"]}-${project.properties["mod_version"]}.jar", project.property("testServerModsFolder") as String)
+//        copyFile("build/libs/${project.properties["archives_name"]}-${project.properties["mod_version"]}.jar", project.property("testClientModsFolder") as String)
     }
 
     build { doLast { copyJarToTestServer.get() } }

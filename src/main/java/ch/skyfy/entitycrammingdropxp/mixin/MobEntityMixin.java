@@ -21,7 +21,7 @@ public abstract class MobEntityMixin extends LivingEntityMixin {
     public void apply(DamageSource damageSource, CallbackInfo info) {
         if (damageSource.getTypeRegistryEntry().matchesId(DamageTypes.CRAMMING.getValue())) {
             var mobEntity = (MobEntity) (Object) this;
-            ExperienceOrbEntity.spawn((ServerWorld) mobEntity.world, mobEntity.getPos(), experiencePoints);
+            ExperienceOrbEntity.spawn((ServerWorld) mobEntity.getWorld(), mobEntity.getPos(), experiencePoints);
         }
     }
 }
